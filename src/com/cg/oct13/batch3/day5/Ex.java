@@ -1,0 +1,30 @@
+package com.cg.oct13.batch3.day5;
+import java.util.*;1
+
+public class Ex {
+	
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a number:");
+		int num1 = sc.nextInt();
+		System.out.println("Enter another number to divide:");
+		int num2 = sc.nextInt();
+		try {
+			System.out.println(num1 / num2);
+		} 
+		catch (ArithmeticException ae) {
+			System.out.println(ae.getMessage());
+			System.out.println("Do not try to divide by zero.");
+		} 
+		catch (Exception e) {
+			System.out.println(e.getMessage());
+			System.out.println("Do not try to divide by zero.");
+		} 
+		finally {
+			System.out.println("End");
+		}
+
+	}
+
+}
