@@ -3,21 +3,26 @@ package com.cg.oct13.batch3.day8;
 public class App {
 	
 	public static void main(String[] args) {
+		
+		FunIn obj = (int i, int j)->i+j;
+		int x=obj.functionalMethod(10,10);
+		System.out.println(x);
 
-		FunIn obj = new FunIn() {
-			@Override
-			public void anotherAbstractMethod() {
-				System.out.println("anotherAbstractMethod");
-			}
 
-			@Override
-			public void abstractMethod() {
-				System.out.println("abstractMethod");
-			}
-		};
-
-		obj.abstractMethod();
-		obj.anotherAbstractMethod();
+//		FunIn obj = new FunIn() {
+//			@Override
+//			public void anotherAbstractMethod() {
+//				System.out.println("anotherAbstractMethod");
+//			}
+//
+//			@Override
+//			public void abstractMethod() {
+//				System.out.println("abstractMethod");
+//			}
+//		};
+//
+//		obj.abstractMethod();
+//		obj.anotherAbstractMethod();
 
 	}
 

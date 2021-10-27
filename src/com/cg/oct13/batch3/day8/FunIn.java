@@ -3,9 +3,9 @@ package com.cg.oct13.batch3.day8;
 public interface FunIn {
 	
 
-	public abstract void abstractMethod();
+	public abstract int functionalMethod(int i,int j);
 
-	public abstract void anotherAbstractMethod();
+	//public abstract void anotherAbstractMethod();
 
 //	public default void defaultMethod() {
 //		System.out.println("defaultMethod");
